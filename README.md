@@ -1,9 +1,5 @@
--> Preview: https://youtu.be/sSBdZ72EhYs
-
--> Link for Frontend: https://github.com/ThyMuoyhak/DeliciousEats-FrontEnd
-
-1. git clone https://github.com/ThyMuoyhak/DeliciousEats-Backend.git
-2. cd DeliciousEats-Backend
+1. git clone https://github.com/rickyaditya3055-cmd/Cafferine-Backend.git
+2. cd Cafferine-Backend
 3. composer install
 4. cp .env.example .env
 5. php artisan key:generate
@@ -11,7 +7,5 @@
 7.php artisan db:seed
 8. php artisan serve
 
-
-email: haksimpledev@gmail.com
-pw: 11111111
-
+admin@gmail.com
+785785
