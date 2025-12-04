@@ -124,8 +124,8 @@
                                         <span class="text-rose-400">0</span>
                                     @endif
                                 </td>
-                                <td class="py-3 px-4 text-gray-300">${{ number_format($product->price, 2) }}</td>
-                                <td class="py-3 px-4 text-gray-300">${{ number_format($product->discounted_price, 2) }}</td>
+                                <td class="py-3 px-4 text-gray-300">Rp{{ number_format($product->price, 2) }}</td>
+                                <td class="py-3 px-4 text-gray-300">Rp{{ number_format($product->discounted_price, 2) }}</td>
                                 <td class="py-3 px-4">
                                     @if($product->discount)
                                         <span class="px-2.5 py-1 bg-cyan-900/30 text-cyan-400 rounded-full text-xs font-medium">

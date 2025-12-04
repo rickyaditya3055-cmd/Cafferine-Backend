@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeliciousEats | Admin</title>
+    <title>CaffeRine | Admin</title>
     <!-- Favicon -->
     <link rel="icon" href="https://i.ytimg.com/vi/x_9SdeVjfe4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAHJnuMKW_ny8rT3ZCRZPM8jsPCRQ" type="image/x-icon">
     <!-- Google Fonts -->
@@ -134,7 +134,7 @@
                         <path d="M2 17l10 5 10-5"/>
                         <path d="M2 12l10 5 10-5"/>
                     </svg>
-                    <h1 class="ml-3 text-xl font-bold sidebar-logo-text">DeliciousEats</h1>
+                    <h1 class="ml-3 text-xl font-bold sidebar-logo-text">CaffeRine</h1>
                 </div>
                 <button id="sidebar-toggle" class="ml-auto text-sidebar-foreground hover:text-sidebar-accent transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -177,7 +177,7 @@
                
                 
                 <!-- Settings Section -->
-                <div class="px-3 mt-6 space-y-1">
+                <!-- <div class="px-3 mt-6 space-y-1">
                     <div class="sidebar-group-label text-xs font-medium text-sidebar-foreground/70 px-3 mb-2">Settings</div>
                     <a href="/settings" class="sidebar-menu-item flex items-center h-10 px-3 rounded-md text-sm font-medium {{ request()->is('settings') ? 'bg-sidebar-accent text-sidebar-accent-foreground' : 'hover:bg-sidebar-border/50' }} transition-colors">
                         <i class="fas fa-cog w-5 h-5"></i>
@@ -187,7 +187,7 @@
                         <i class="fas fa-user-circle w-5 h-5"></i>
                         <span class="ml-3 sidebar-text">Profile</span>
                     </a>
-                </div>
+                </div> -->
                 
                 <!-- User Profile and Logout -->
                 <div class="mt-auto border-t border-sidebar-border pt-4 px-3">
@@ -213,32 +213,6 @@
 
         <!-- Main Content -->
         <div class="flex-1 overflow-auto">
-            <!-- Top Navigation Bar -->
-            <header class="h-16 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800 flex items-center px-6">
-                <button id="mobile-sidebar-toggle" class="mr-4 md:hidden text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                
-                <div class="flex-1"></div>
-                
-                <!-- Right side navigation items -->
-                <div class="flex items-center space-x-4">
-                    <!-- Notifications -->
-                    <button class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 relative">
-                        <i class="fas fa-bell text-xl"></i>
-                        <span class="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500"></span>
-                    </button>
-                    
-                    <!-- Theme Toggle -->
-                    <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
-                        <i class="fas fa-moon text-xl dark:hidden"></i>
-                        <i class="fas fa-sun hidden dark:block text-xl"></i>
-                    </button>
-                </div>
-            </header>
-            
             <!-- Page Content -->
             <main class="p-6">
                 @yield('content')
@@ -247,10 +221,10 @@
             <!-- Footer -->
             <footer class="border-t border-gray-200 dark:border-gray-800 py-4 px-6 text-center text-sm text-gray-500 dark:text-gray-400">
                 <p>
-                    Developed by <a href="https://web.facebook.com/urfavhak" class="font-medium text-primary hover:underline" target="_blank" rel="noopener noreferrer">XXXXXX</a>
+                    Developed by <a href="https://www.tiktok.com/@rkyadty?_r=1&_t=ZS-913w2RaCZlY" class="font-medium text-primary hover:underline" target="_blank" rel="noopener noreferrer">RKYY</a>
                 </p>
                 <p class="mt-1">
-                    &copy; 2025 DeliciousEats. All rights reserved.
+                    &copy; 2025 CaffeRine. All rights reserved.
                 </p>
             </footer>
         </div>

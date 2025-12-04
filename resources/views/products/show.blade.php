@@ -119,18 +119,18 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
                             <div class="text-sm text-gray-400 mb-1">Price</div>
-                            <div class="text-xl font-bold text-gray-200">${{ number_format($product->price, 2) }}</div>
+                            <div class="text-xl font-bold text-gray-200">Rp{{ number_format($product->price, 2) }}</div>
                         </div>
 
                         <div>
                             <div class="text-sm text-gray-400 mb-1">Discounted Price</div>
                             @if($product->discounted_price < $product->price)
                                 <div class="flex items-end gap-2">
-                                    <div class="text-xl font-bold text-emerald-400">${{ number_format($product->discounted_price, 2) }}</div>
-                                    <div class="text-sm text-gray-500 line-through">${{ number_format($product->price, 2) }}</div>
+                                    <div class="text-xl font-bold text-emerald-400">Rp{{ number_format($product->discounted_price, 2) }}</div>
+                                    <div class="text-sm text-gray-500 line-through">Rp{{ number_format($product->price, 2) }}</div>
                                 </div>
                             @else
-                                <div class="text-xl font-bold text-gray-200">${{ number_format($product->discounted_price, 2) }}</div>
+                                <div class="text-xl font-bold text-gray-200">Rp{{ number_format($product->discounted_price, 2) }}</div>
                             @endif
                         </div>
 
@@ -200,7 +200,7 @@
                         <div class="p-4">
                             <h3 class="text-gray-200 font-medium mb-1">Related Product 1</h3>
                             <p class="text-gray-400 text-sm mb-2">Category</p>
-                            <p class="text-cyan-400 font-bold">$99.99</p>
+                            <p class="text-cyan-400 font-bold">Rp99.99</p>
                         </div>
                     </div>
                     

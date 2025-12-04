@@ -128,7 +128,7 @@
                                 <label for="price" class="block text-sm font-medium text-gray-300 mb-1">Price <span class="text-rose-400">*</span></label>
                                 <div class="relative">
                                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <span class="text-gray-400">$</span>
+                                        <span class="text-gray-400">Rp</span>
                                     </div>
                                     <input 
                                         type="number" 

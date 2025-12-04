@@ -3,9 +3,46 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\SlideHeroController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\OrderController;
+
+/*
+|--------------------------------------------------------------------------
+| Payment Routes
+|--------------------------------------------------------------------------
+*/
+
+// Create QRIS Payment
+Route::post('/payments/qris', [PaymentController::class, 'createQris']);
+
+// Check QRIS Payment Status
+Route::get('/payments/qris/{ref}/status', [PaymentController::class, 'checkQrisStatus']);
+
+// Manual Confirmation (untuk testing)
+Route::post('/payments/qris/{ref}/confirm', [PaymentController::class, 'confirmPayment']);
+
+// Payment Webhook
+Route::post('/payments/webhook', [PaymentController::class, 'webhook']);
+
+// Payment History
+Route::get('/payments/history', [PaymentController::class, 'getPaymentHistory']);
+
+/*
+|--------------------------------------------------------------------------
+| Order Routes
+|--------------------------------------------------------------------------
+*/
+
+// Send Receipt via Email
+Route::post('/orders/{orderId}/send-receipt', [OrderController::class, 'sendReceipt']);
+
+// Get Order Details
+Route::get('/orders/{orderId}', [OrderController::class, 'show']);
+
+// Create Order (jika belum ada)
+Route::post('/orders', [OrderController::class, 'store']);
 
 // User API Routes
 Route::get('/users', [AuthController::class, 'getAllUsers']);

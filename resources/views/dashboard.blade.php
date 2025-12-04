@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row justify-between items-center mb-8">
         <div class="mb-4 md:mb-0">
             <h1 class="text-3xl font-bold text-gray-100">Dashboard</h1>
-            <p class="text-gray-400 mt-1">Welcome back to DeliciousEats admin panel</p>
+            <p class="text-gray-400 mt-1">Welcome back to CaffeRine admin panel</p>
         </div>
         
     </div>
@@ -95,81 +95,41 @@
         </div>
     </div>
 
-    <!-- Calendar and Time in Cambodia -->
+    <!-- Calendar and Time in Indonesia -->
     <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-xl border border-gray-700/50 p-6 mb-8">
         <h2 class="text-xl font-semibold text-gray-200 mb-4 flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
             </svg>
-            Cambodia Calendar & Time
+            Indonesia Calendar & Time
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Calendar -->
-            <div class="bg-gray-900/70 rounded-xl border border-gray-700/50 p-5 shadow-inner">
-                <div class="text-center">
-                    <p class="font-bold mb-4 text-gray-200">April 2025</p>
-                    <div class="grid grid-cols-7 gap-1 text-xs">
-                        <div class="font-medium text-gray-400 p-2">Sun</div>
-                        <div class="font-medium text-gray-400 p-2">Mon</div>
-                        <div class="font-medium text-gray-400 p-2">Tue</div>
-                        <div class="font-medium text-gray-400 p-2">Wed</div>
-                        <div class="font-medium text-gray-400 p-2">Thu</div>
-                        <div class="font-medium text-gray-400 p-2">Fri</div>
-                        <div class="font-medium text-gray-400 p-2">Sat</div>
-                        
-                        <!-- Sample days (replace with dynamic calendar) -->
-                        <div class="p-2"></div>
-                        <div class="p-2"></div>
-                        <div class="p-2 text-gray-300">1</div>
-                        <div class="p-2 text-gray-300">2</div>
-                        <div class="p-2 text-gray-300">3</div>
-                        <div class="p-2 text-gray-300">4</div>
-                        <div class="p-2 text-gray-300">5</div>
-                        
-                        <div class="p-2 text-gray-300">6</div>
-                        <div class="p-2 text-gray-300">7</div>
-                        <div class="p-2 text-gray-300">8</div>
-                        <div class="p-2 text-gray-300">9</div>
-                        <div class="p-2 text-gray-300">10</div>
-                        <div class="p-2 text-gray-300">11</div>
-                        <div class="p-2 text-gray-300">12</div>
-                        
-                        <div class="p-2 text-gray-300">13</div>
-                        <div class="p-2 text-gray-300">14</div>
-                        <div class="p-2 text-gray-300">15</div>
-                        <div class="p-2 text-gray-300">16</div>
-                        <div class="p-2 text-gray-300">17</div>
-                        <div class="p-2 text-gray-300">18</div>
-                        <div class="p-2 text-gray-300">19</div>
-                        
-                        <div class="p-2 text-gray-300">20</div>
-                        <div class="p-2 text-gray-300">21</div>
-                        <div class="p-2 text-gray-300">22</div>
-                        <div class="p-2 text-gray-300">23</div>
-                        <div class="p-2 bg-cyan-600/20 rounded-full text-cyan-300 font-medium">24</div>
-                        <div class="p-2 text-gray-300">25</div>
-                        <div class="p-2 text-gray-300">26</div>
-                        
-                        <div class="p-2 text-gray-300">27</div>
-                        <div class="p-2 text-gray-300">28</div>
-                        <div class="p-2 text-gray-300">29</div>
-                        <div class="p-2 text-gray-300">30</div>
-                        <div class="p-2"></div>
-                        <div class="p-2"></div>
-                        <div class="p-2"></div>
-                    </div>
-                </div>
+        <!-- Calendar -->
+        <div class="bg-gray-900/70 rounded-xl border border-gray-700/50 p-5 shadow-inner">
+        <div class="text-center space-y-3">
+            <div class="flex justify-between items-center mb-3">
+            <button id="prevMonth" class="text-gray-400 hover:text-cyan-400 transition">
+                &#10094;
+            </button>
+            <p id="calendarMonth" class="font-bold text-gray-200 text-lg">Loading...</p>
+            <button id="nextMonth" class="text-gray-400 hover:text-cyan-400 transition">
+                &#10095;
+            </button>
             </div>
+            <div id="calendarDays" class="grid grid-cols-7 gap-1 text-xs"></div>
+        </div>
+        </div>
+
             
-            <!-- Current Time in Cambodia -->
+            <!-- Current Time in Indonesia -->
             <div class="bg-gray-900/70 rounded-xl border border-gray-700/50 p-5 shadow-inner flex items-center justify-center">
                 <div class="text-center">
-                    <p class="text-sm font-medium text-gray-400 mb-3">Current Time in Cambodia (ICT, UTC+7)</p>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Current Time in Indonesia (ICT, UTC+7)</p>
                     <div class="relative">
                         <div class="absolute inset-0 bg-cyan-600/10 blur-xl rounded-full"></div>
-                        <p id="cambodiaTime" class="text-4xl font-bold text-white relative">11:54:00 AM</p>
+                        <p id="indonesiaTime" class="text-4xl font-bold text-white relative">11:54:00 AM</p>
                     </div>
-                    <p id="cambodiaDate" class="text-sm text-gray-400 mt-3">Thursday, April 24, 2025</p>
+                    <p id="indonesiaDate" class="text-sm text-gray-400 mt-3">Sunday, November 02, 2025</p>
                 </div>
             </div>
         </div>
@@ -304,28 +264,94 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function updateCambodiaTime() {
-            const now = new Date();
-            // Cambodia is UTC+7 (no DST)
-            const cambodiaTime = new Date(now.getTime() + 7 * 60 * 60 * 1000);
-            const hours = cambodiaTime.getUTCHours() % 12 || 12;
-            const minutes = String(cambodiaTime.getUTCMinutes()).padStart(2, '0');
-            const seconds = String(cambodiaTime.getUTCSeconds()).padStart(2, '0');
-            const ampm = cambodiaTime.getUTCHours() >= 12 ? 'PM' : 'AM';
-            const day = cambodiaTime.getUTCDate();
-            const month = cambodiaTime.toLocaleString('en-US', { month: 'long' });
-            const year = cambodiaTime.getUTCFullYear();
-            const weekday = cambodiaTime.toLocaleString('en-US', { weekday: 'long' });
+document.addEventListener('DOMContentLoaded', function () {
+  // === WAKTU INDONESIA ===
+  function updateIndonesiaTime() {
+    const now = new Date();
+    const options = { timeZone: 'Asia/Jakarta' };
+    const indonesiaTime = new Date(now.toLocaleString('en-US', options));
 
-            document.getElementById('cambodiaTime').textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
-            document.getElementById('cambodiaDate').textContent = `${weekday}, ${month} ${day}, ${year}`;
-        }
+    const hours = indonesiaTime.getHours() % 12 || 12;
+    const minutes = String(indonesiaTime.getMinutes()).padStart(2, '0');
+    const seconds = String(indonesiaTime.getSeconds()).padStart(2, '0');
+    const ampm = indonesiaTime.getHours() >= 12 ? 'PM' : 'AM';
+    const day = indonesiaTime.getDate();
+    const month = indonesiaTime.toLocaleString('en-US', { month: 'long' });
+    const year = indonesiaTime.getFullYear();
+    const weekday = indonesiaTime.toLocaleString('en-US', { weekday: 'long' });
 
-        updateCambodiaTime();
-        setInterval(updateCambodiaTime, 1000);
-    });
+    document.getElementById('indonesiaTime').textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+    document.getElementById('indonesiaDate').textContent = `${weekday}, ${month} ${day}, ${year}`;
+  }
+
+  updateIndonesiaTime();
+  setInterval(updateIndonesiaTime, 1000);
+
+  // === KALENDER ===
+  const calendarDays = document.getElementById('calendarDays');
+  const calendarMonth = document.getElementById('calendarMonth');
+  const prevBtn = document.getElementById('prevMonth');
+  const nextBtn = document.getElementById('nextMonth');
+
+  let currentDate = new Date();
+
+  function renderCalendar() {
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
+    const today = new Date();
+
+    const monthName = currentDate.toLocaleString('en-US', { month: 'long' });
+    calendarMonth.textContent = `${monthName} ${year}`;
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const lastDate = new Date(year, month + 1, 0).getDate();
+
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    calendarDays.innerHTML = weekdays.map(d => 
+      `<div class="font-medium text-gray-400 p-2">${d}</div>`
+    ).join('');
+
+    // Ruang kosong sebelum tanggal 1
+    for (let i = 0; i < firstDay; i++) {
+      calendarDays.innerHTML += `<div class="p-2"></div>`;
+    }
+
+    // Isi tanggal
+    for (let date = 1; date <= lastDate; date++) {
+      const isToday =
+        date === today.getDate() &&
+        month === today.getMonth() &&
+        year === today.getFullYear();
+
+      const dayHTML = `
+        <div class="p-2 rounded-full text-gray-300 ${
+          isToday
+            ? 'bg-cyan-600/20 text-cyan-300 font-medium shadow-lg shadow-cyan-600/20'
+            : 'hover:bg-cyan-600/10 transition'
+        }">
+          ${date}
+        </div>
+      `;
+      calendarDays.innerHTML += dayHTML;
+    }
+  }
+
+  renderCalendar();
+
+  // Navigasi bulan sebelumnya
+  prevBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    renderCalendar();
+  });
+
+  // Navigasi bulan berikutnya
+  nextBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    renderCalendar();
+  });
+});
 </script>
+
 
 <style>
     /* Glow effects */
